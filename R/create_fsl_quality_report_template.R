@@ -37,7 +37,7 @@ create_fsl_quality_report_template <- function(folder_path, ...) {
   } else if (fs::file_exists(orig2)) {
     fs::file_move(orig2, dest2)
   } else {
-    stop("Expected activation file Rprofile.R not found in template")
+    stop(paste0("Expected activation file Rprofile.R not found in template. folder_path=", folder_path))
   }
   invisible(folder_path)
 }
