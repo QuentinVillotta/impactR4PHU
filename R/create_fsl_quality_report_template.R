@@ -37,8 +37,8 @@ create_fsl_quality_report_template <- function(folder_path, ...) {
   if (fs::file_exists(orig1)) {
     fs::file_move(orig1, dest1)
   } else {
-    warning(paste0("Actual wd : ", getwd()))
-    stop(paste0("Expected activation file Rprofile.R not found in template. folder_path=", folder_path))
+    # warning(paste0("Actual wd : ", getwd()))
+    stop(paste0("Expected activation file Rprofile.R not found in template. folder_path=", folder_path, " AND Actual wd : ", getwd()))
   }
   invisible(folder_path)
 }
