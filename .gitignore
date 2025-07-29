@@ -1,5 +1,67 @@
-.Rproj.user
+# macOS system files
+.DS_Store
+
+# RStudio files and folders
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
-docs
+*.Rproj
+
+# Generated documentation
+docs/
+*.html
+*.pdf
+
+# Build and check artifacts
+.Rcheck/
+.Rbuildignore
+.Rinstignore
+*.tar.gz
+
+# Common output folders
+build/
+vignettes/*.html
+vignettes/*.R
+vignettes/*.md
+man/*.Rd
+
+# Test outputs and data files
+tests/testthat-output/
+*.csv
+*.rds
+*.rda
+*.RData
+
+# Caches from other tools
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# renv / packrat cache
+renv/library_*/
+renv/staging/
+renv/python/
+
+# pkgdown website build
+_pkgdown.yml
+_site/
+*.knit.md
+*.utf8.md
+
+# Miscellaneous log/temp/backup files
+*.log
+*.aux
+*.out
+*.toc
+*.nav
+*.snm
+*.bak
+*.tmp
+*.swp
+*~
+
+# Secrets or environment config
+.env
+.env.local
+*.key
